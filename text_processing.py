@@ -16,8 +16,3 @@ def no_vowels(input_string):
         no_vowel_string = no_vowel_string.replace(i,"")
     return no_vowel_string
 
-def main():
-    tmp = input()
-    normalize(tmp)
-
-main()
