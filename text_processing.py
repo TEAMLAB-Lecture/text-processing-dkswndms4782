@@ -1,6 +1,8 @@
 def normalize(input_string):
     splited_string = input_string.split()
     normalized_string = ""
+    if len(splited_string) == 0: 
+        return ""
     for i in range(0,len(splited_string)-1):
         normalized_string += (splited_string[i] + " ")
     normalized_string += splited_string[len(splited_string) - 1]
@@ -13,3 +15,9 @@ def no_vowels(input_string):
     for i in vowel:
         no_vowel_string = no_vowel_string.replace(i,"")
     return no_vowel_string
+
+def main():
+    tmp = input()
+    normalize(tmp)
+
+main()
